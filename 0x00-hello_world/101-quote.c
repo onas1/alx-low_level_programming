@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *  * main - Prints "and that piece of art is useful" - - Dora Korpar
+ * main - Prints "and that piece of art is useful" - - Dora Korpar
  * followed by a new line, to standard error.
- *    * Return: 1 always
+ * Return: 1 always
  */
 
 int main(void)
