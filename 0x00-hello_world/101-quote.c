@@ -1,15 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <unistd.h>
 
 /**
- * main - Prints "and that piece of art is useful" - - Dora Korpar
- * followed by a new line, to standard error.
+ * main - entry point
  * Return: 1 always
  */
 
 int main(void)
 {
-	write(STDOUT_FILENO,
+	write(1,
 	"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
