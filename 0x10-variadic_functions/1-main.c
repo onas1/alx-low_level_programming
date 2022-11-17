@@ -1,4 +1,4 @@
-#include "main.h"
+#include "variadic_functions.h"
 
 /**
  * main - check the code for Holberton School students.
@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    _puts_recursion("Betty Holberton");
+    print_numbers(", ", 4, 0, 98, -1024, 402);
     return (0);
 }
