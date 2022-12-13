@@ -1,27 +1,30 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
 
 /**
- * pop_listint - delete the head node from the lincked list
- * @head: pointer to the begin of the lincked list
+ * pop_listint - deletes the head node of
+ * a linked list
+ * @head: head of a list.
  *
- * Return: data that was in the node
+ * Return: head node's data.
  */
-
 int pop_listint(listint_t **head)
 {
-	int data_ret = 0;
-	listint_t *tmp = *head;
+	int hnode;
+	listint_t *h;
+	listint_t *curr;
 
-	if (tmp == NULL)
+	if (*head == NULL)
 		return (0);
-	data_ret = tmp->n;
-	*head = tmp->next;
-	if (tmp != NULL)
-	{
-		free(tmp);
-		return (data_ret);
-	}
-	return (data_ret);
+
+	curr = *head;
+
+	hnode = curr->n;
+
+	h = curr->next;
+
+	free(curr);
+
+	*head = h;
+
+	return (hnode);
 }
